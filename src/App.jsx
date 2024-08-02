@@ -3,6 +3,7 @@ import AuthPage from "./pages/auth";
 import CommonLayout from "./components/common-layout";
 import TaskPage from "./pages/task";
 import SrcumBoardPage from "./pages/srucm-board";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="list" element={<TaskPage />} />
           <Route path="scrum-board" element={<SrcumBoardPage />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
